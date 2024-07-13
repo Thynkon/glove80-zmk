@@ -275,9 +275,10 @@
             label = "&BEPO_DASH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
- 
+
             bindings
-                = <&macro_press &kp LSHFT &kp GRAVE>;
+                = <&macro_press &kp LSHFT &kp GRAVE>
+                , <&macro_release &kp LSHFT &kp GRAVE>;
         };
     };
 };
